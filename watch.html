@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/010c625b7a.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <style>
+        #img1{
+            padding-left: 600px;
+        }
+        .d-flex{
+            padding-right: 150px;
+           
+        }
+        .container-fluid{
+            background-color: #7d5994;
+          padding-left:150px;
+           
+        }
+        nav{
+            width: 100%;
+        }
+        #navbar{
+           
+            font-family: SF-Pro-regular;
+            font-weight: 30px;
+            padding-left: 500px;
+            font-size: large;
+            
+                          
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .carouselslide{
+            margin-top: 100px;
+          
+        }
+        button{
+
+            background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+            margin: 5px;
+            
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 100% auto;
+            color: rgb(65, 31, 205);            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 5px;
+          }
+
+        button:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+            padding-left: 30px;
+            margin-left: 50px;
+          }
+        #navbar1:hover{
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+
+        }
+    
+        .col-4:hover{
+            background-color: #e4e3d5;
+        }
+        #c1,c2{
+            width: 10%;
+            justify-self:center;
+            height: 10px;
+        }
+       
+    
+    </style>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="icon.png" id="img1"></a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button></form>
+        </div><hr>
+        <nav class="navbar navbar-light bg-light ">
+            <div class="container-fluid" id="navbar1">
+            
+                <form class="container-fluid justify-content-start">
+                <button class="btn1" type="button">BRANDS</button>
+                <button class="btn2 " type="button">MEN</button>
+                <button class="btn3" type="button">WOMAN</button>
+                <button class="btn4 " type="button">KIDS</button>
+                <button class="btn5" type="button">SERVICE</button>
+                <button class="btn6 " type="button"  onclick="document.location='log.html'">LOGIN</button></form>
+               
+            </div>
+        </nav>   
+    </nav>
+
+
+
+    <!-- <div id="carouselExampleControls" class="carouselslide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="s2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="s1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Women1_jpg.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./s1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./s2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./s11.gif" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    
+    <br><br><br><br>
+
+
+
+
+
+    <div class="container1">
+        <div class="row" align="center"><h1>FLASH SALE</h1></div>
+        <div class="row" align="center">
+            <div class="col-4">
+
+                <div class="card" style="width: 16rem;" id="c1">
+                    <img src="w1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio G-Shock Black Dial Mens Watch-G559<br> ₹ 11,995</h5>
+                      <p class="card-text">Midnight Blue, 6GB,128 GB Storage.<br>FREE DELIVERY</p>
+                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                      <a href="#" class="btn btn-primary">Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+
+                <div class="card" style="width: 16rem;" id="c2">
+                    <img src="w2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio G-Shock Black Dial Mens Watch-G559<br> ₹ 11,995</h5>
+                      <p class="card-text">Midnight Blue, 6GB,128 GB Storage.<br>FREE DELIVERY</p>
+                   
+                      <i class="fa-solid fa-star"></i>
+                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+
+                <div class="card" style="width: 16rem;" id="c3">
+                    <img src="w3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Danish Design Black Dial Men's Watch -IQ13Q1034<br>18,9855</h5>
+                     <br>FREE DELIVERY</p>
+                    
+                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+
+                <div class="card" style="width: 16rem;" id="c4">
+                    <img src="w6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio G-Shock Black Dial Mens Watch-G435<br>₹ 13,995</h5>
+                      <br>FREE DELIVERY</p>
+                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-4">
+
+                <div class="card" style="width: 16rem;" id="card1">
+                    <img src="w7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio G-Shock Black Dial Mens Watch-G435<br>₹ 13,995</h5>
+                      <br>FREE DELIVERY</p>
+                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+                  
+            <div class="col-4">
+
+                <div class="card" style="width: 16rem;" id="card1">
+                    <img src="w11.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio G-Shock Black Dial Mens Watch-G435<br>₹ 13,995</h5>
+                      <br>FREE DELIVERY</p>
+                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+                  
+            <div class="col-4">
+
+                <div class="card" style="width: 16rem;" id="card1">
+                    <img src="w10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio G-Shock Black Dial Mens Watch-G435<br>₹ 13,995</h5>
+                      <br>FREE DELIVERY</p>
+                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+                  
+            <div class="col-4">
+
+                <div class="card" style="width: 16rem;" id="card1">
+                    <img src="w9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio G-Shock Black Dial Mens Watch-G435<br>₹ 13,995</h5>
+                      <br>FREE DELIVERY</p>
+                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+                  
+            <div class="col-4">
+
+                <div class="card" style="width: 16rem;" id="card1">
+                    <img src="w5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Casio G-Shock Black Dial Mens Watch-G435<br>₹ 13,995</h5>
+                      <br>FREE DELIVERY</p>
+                      <a href="#" class="btn btn-primary">ADD TO CART</a>
+                    </div>
+                  </div>
+            </div>
+        </div>          
+    </div>            
+         
+  
+</body>
+</html>
